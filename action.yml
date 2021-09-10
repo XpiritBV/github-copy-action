@@ -2,11 +2,13 @@ name: 'Container Action Template'
 description: 'Get started with Container actions'
 author: 'GitHub'
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  TARGET_FOLDER: ""
+  SOURCE_FOLDER: ""
+  CONTENTS: ""
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.myInput }}
+    - ${{ inputs.TARGET_FOLDER }}
+    - ${{ inputs.SOURCE_FOLDER }}
+    - ${{ inputs.CONTENTS }}
