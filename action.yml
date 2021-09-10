@@ -2,9 +2,9 @@ name: 'Container Action Template'
 description: 'Get started with Container actions'
 author: 'GitHub'
 inputs: 
-  TARGET_FOLDER: ""
-  SOURCE_FOLDER: ""
-  CONTENTS: ""
+  TARGET_FOLDER: 
+  SOURCE_FOLDER: 
+  CONTENTS:
 runs:
   using: 'docker'
   image: 'Dockerfile'
